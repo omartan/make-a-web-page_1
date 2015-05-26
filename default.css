@@ -1,0 +1,58 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #03425a;
+}
+
+/* Header */
+
+.title-box {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font: 100% Arial, Helvetica, sans-serif;  
+}
+
+/* Content */
+
+.content {
+    max-width: 1000px;
+    margin: 0 auto 0 auto;
+}
+
+.lesson {
+    display: flex;
+}
+
+.stage {
+    max-width: 100px;
+    color: #ffaf29;
+    background: #903700;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-bottom: thick outset #702b00;
+    border-bottom-left-radius: 20px;
+    font: 100% Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;    
+}
+
+.stage-content {
+    max-width: 900px;
+    color: #241600;
+    background: #905a00;
+    padding-left: 10px;
+    border-top-right-radius: 20px;
+    border-bottom: thick outset #8a5700;
+    border-bottom-right-radius: 20px;
+    font:100 100% monaco, Consolas, "Lucida Console", monospace;
+}
+
+.stage-content h1 {
+    font-weight: 900;
+    color: #000;
+}

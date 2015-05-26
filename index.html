@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Introduction to Programming Nanodegree</title>
+    <link href="default.css" rel="stylesheet">
+</head>
+<body>
+    <div class = "title-box">
+        <h1>Introduction to Programming Nanodegree</h1>
+        <h4><em>by Omar Tan</em></h4>
+    </div>
+    <br>
+    <div class="content">
+    <!--Each stage represents one lesson and there's a <br> tag before the start of a new stage, also the DOM format for each stage is almost identical, crucial div elements needed are classes; lesson, stage and stage-content-->
+    <!--Stage 0-->
+        <div class = "lesson">
+            <div class="stage">
+                <h1>Stage 0</h1>
+            </div>
+            <div class="stage-content">
+                <h1>Getting Started with HTML</h1>
+                <p>5 Basics of the Web</p>
+                <ol>
+                    <li>The Web is a collection of web pages written in a language called HTML. Web browsers read this documents and then display it to the user.</li>
+                    <li>HTML (Hyper Text Markup Language) document contains text and allows reference to other documents and links to other pages.</li>
+                    <li>HTTP is a type of communication method for the web browser to make requests via the internet to the servers.</li>
+                    <li>Web Applications: Will learn at the end of the course.</li>
+                </ol>
+                <p>Helpful Reminders</p>
+                <ol>
+                    <li>Programmers don't need to remember everything.</li>
+                    <li>Basic HTML vocabs:
+                    <ol>
+                        <li>Most HTML tags require a closing tag with the exception of "void" tags.</li>
+                        <li>An element refers to everything within the opening and closing tags.</li>
+                        <li>An attribute or "a" is a property of an HTML element.</li>
+                        <li>An element can either be "block" or "inline", the difference between both is one can be styled via "CSS" and another does not.</li>
+                    </ol>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <br>
+    <!--Stage 1.2-->
+        <div class = "lesson">
+            <div class="stage">
+                <h1>Stage 1.2</h1>
+            </div>
+            <div class="stage-content">
+                <h1>Creating a Structured Document</h1>
+                <ol>
+                    <li>HTML and CSS change over time but the principles remains the same, therefore its important to understand how to break the page into smaller manageable chunks.</li>
+                    <li>Simple way to understand how the whole website components work is to think of it as a house:
+                    <ol>
+                        <li>HTML is the structure where the wall is placed.</li>
+                        <li>CSS is the style of your house.</li>
+                        <li>Javascript is your interactive components; garage door, television remote and etc.</li>
+                    </ol>
+                    </li>
+                    <li>There are rules for how websites behave.</li>
+                    <li>DOM (document object model) - standard convention to represent and interaction elements in HTML.</li>
+                    <li>DOM tree - HTML structure of the website.</li>
+                    <li>CSS - to define style of website.</li>
+                    <li>Every element on a website is boxed shape, regardless of how it "look", its core is a box shape.</li>
+                    <li>To dissect a website design is to break the site design into smaller boxes.</li>
+                    <li>Start breaking the website from big to small and to start building back from the reverse.</li>
+                    <li>Use div tags in code to represent a "block" in a website, this allows code to be read easier</li>
+                </ol>
+            </div>
+        </div>
+        <br>
+    <!--Stage 1.3-->
+        <div class = "lesson">
+            <div class="stage">
+                <h1>Stage 1.3</h1>
+            </div>
+            <div class="stage-content">
+                <h1>Adding CSS Style and HTML Structure</h1>
+                <ol>
+                    <li>CSS (cascading style sheets) - can have multiple styles in a site.</li>
+                    <li>Cascading means that the rule applies to all, this is the idea known as <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Inheritance">inheritance</a> and requires abstract thinking.</li>
+                    <li>Usage of specific code reference sites will help in the code development, it's important to know how to refer to these sites for information, eg: <a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">MDN CSS reference</a>.</li>
+                    <li>The Box Model; margin (space between boxes), bodder, padding, content.</li>
+                    <li>Width of the element is actually sum of padding and content.</li>
+                    <li>*{box-sizing: border-box;} calculates the box size without including the margin.</li>
+                    <li>Box Sizing:
+                    <ol>
+                        <li>HTML elements are boxes that each are made of 4 components (Box Model); margin, border, padding and content.</li>
+                        <li>Due to the many components to each box, there are 2 techniques to help deal with sizing issues:
+                        <ol>
+                            <li>Set sizes in terms of percentages rather than pixels.</li>
+                            <li>Set "box-sizing" attribute to "border-box" for every element, this calculates the box size without including the margin.</li>
+                            <li>Different browsers work slightly differently hence why we need to add browser prefixed CSS tags.</li>
+                        </ol>
+                        </li>
+                    </ol>
+                    </li>
+                    <li>Box Positioning:
+                    <ol>
+                        <li>Divs are <b>block</b> elements, hence they take up the entire width of a page.</li>
+                        <li>The rule "display:flex;" to the appropriate CSS overrides this behavior and let divs appear next to each other.</li>
+                        <li>Refer to <a href = "https://css-tricks.com/snippets/css/a-guide-to-flexbox/">this guide</a> for more informationg regarding CSS flexbox.</li>
+                    </ol>
+                    </li>
+                    <li>Avoid Repetitions during programming. In the example of web development, changing the style of an element is much faster and easier if similar elements shares the same <em>class</em> or <em>id</em> tags. As any elements that contains the same tags will apply the same style. More information regarding the differences or similarities of a <em>class</em> or <em>id</em> tags can be found <a href="https://css-tricks.com/the-difference-between-id-and-class/">here</a>.</li>
+                    <li>Debugging: As with all things, mistakes do happen and even experience programmers at times make mistakes, therefore it's important to know how to debug the errors that we find in our code. In the case of web development a few things that we can do is as follows:
+                    <ol>
+                        <li>Validate your <a href="http://validator.w3.org/#validate_by_input">HTML</a> and <a href="https://jigsaw.w3.org/css-validator/#validate_by_input">CSS</a>.</li>
+                        <li>Open and test website in different browsers to ensure it's rendered correctly, if there's a problem, use the respective web browser developer tools to debug the website. More information can be found <a href="http://blog.teamtreehouse.com/tips-debugging-html-css">here</a>.</li>
+                    </ol>
+                    </li>
+                    <li>Code, Test, Refine
+                    <ol>
+                        <li>Look for natural boxes.</li>
+                        <li>Look for repeated styles and semantic elements.</li>
+                        <li>Write your HTML.</li>
+                        <li>Apply styles (from BIGGEST to smallest).</li>
+                        <li>Fix things.</li>
+                    </ol>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <br>
+        <!--End of .lesson class-->
+    </div><!--End of .content class-->
+</body>
+</html>
